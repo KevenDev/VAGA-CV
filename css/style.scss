@@ -1,0 +1,42 @@
+@import "./sidebar.scss";
+@import "./table.scss";
+@import "./cardMobile.scss";
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box
+}
+
+main {
+  width: calc(100% - 390px);
+  height: 100%;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  font-family: Verdana, sans-serif;
+  display: flex;
+  background-color: white;
+}
+
+h5 {
+  color: #333;
+}
+
+.bloqueada {
+  background-color: #999999;
+}
+
+.disponivel {
+  background-color: #51A351;
+}
+
+.reservada {
+  background-color: #F89406;
+}
+
+.vendida {
+  background-color: #EC5D59;
+}

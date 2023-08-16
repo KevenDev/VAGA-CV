@@ -1,0 +1,95 @@
+.containerMobile {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  width: 100vw;
+  height: 100%;
+  background-color: #F5F5F5;
+
+  @media (min-width: 1024px) {
+    display: none;
+  }
+
+  .navMobile {
+    width: 100%;
+    display: flex;
+    align-items: center;
+
+    @media (min-width: 1024px) {
+      display: none;
+    }
+
+    .menuBtn {
+      display: flex;
+      font-size: 1.5rem;
+      align-items: center;
+    }
+
+    .title {
+      color: #333333;
+      margin: 0 auto;
+      text-align: center;
+    }
+  }
+
+  .cardsGroup {
+    width: 100%;
+    padding-top: 2rem;
+    gap: 1rem;
+
+    @media (min-width: 500px) {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    @media (min-width: 768px) {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+  }
+
+  .card {
+    background-color: #F5F5F5;
+    box-shadow: 0 0 0 1px rgba(#000, .05), 0 20px 50px 0 rgba(#000, .1);
+    border-radius: 15px;
+    overflow: auto;
+    width: 100%;
+    padding: 1.5rem;
+    margin-top: 0.5rem;
+  }
+
+
+  .cardHeader {
+    margin-top: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .card-footer {
+    margin-top: 0.5rem;
+    border-top: 1px solid #409A75;
+    padding-top: 0.5rem;
+    display: flex;
+    flex-direction: column;
+
+    .spaceValues {
+      display: flex;
+      margin-top: 0.5rem;
+      justify-content: space-between;
+
+    }
+  }
+
+  .disponibility {
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    font-weight: 400;
+    margin-top: 1rem;
+    padding: 0.5rem;
+    border-radius: 5px;
+  }
+
+}

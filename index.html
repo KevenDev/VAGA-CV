@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Document</title>
+</head>
+<body>
+  <aside class="sidebar" id="sidebarMobile">
+    <div class="containerSidebar">
+      <button class="closeBtn" id="closeBtn">
+        <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#000000}</style><path d="M376.6 84.5c11.3-13.6 9.5-33.8-4.1-45.1s-33.8-9.5-45.1 4.1L192 206 56.6 43.5C45.3 29.9 25.1 28.1 11.5 39.4S-3.9 70.9 7.4 84.5L150.3 256 7.4 427.5c-11.3 13.6-9.5 33.8 4.1 45.1s33.8 9.5 45.1-4.1L192 306 327.4 468.5c11.3 13.6 31.5 15.4 45.1 4.1s15.4-31.5 4.1-45.1L233.7 256 376.6 84.5z"/></svg>
+      </button>
+      <div class="titleSidebar">
+        <div>
+          <h5>VARANDAS DO GARCIA</h5>
+          <p>132 Unidades Disponives</p>
+        </div>
+        <div class="btnInformations">
+          <button>INFORMAÇÕES</button>
+        </div>
+      </div>
+      <div class="lineSeparator"></div>
+      <div class="containerSales">
+        <div class="statusSales">
+          <img src="./images/trofeu.svg" alt="troféu">
+          <p>STATUS DE VENDA</p>
+          <span>75.23%</span>
+        </div>
+        <div class="containerProgress">
+          <div class="progress"></div>
+        </div>
+      </div>
+      <div class="lineSeparator"></div>
+      <div class="containerSituations">
+        <h5>SITUAÇÃO DO EMPREDIMENTO</h5>
+        <div class="containerStatus">
+          <div class="cardStatus" id="cardGray">
+            <div>
+              <img src="./images/bolaCinza.svg" alt="bola cinza">
+            </div>
+            <div>
+              <span>10</span>
+              <p>BLOQUEADA</p>
+            </div>
+          </div>
+          <div class="cardStatus" id="cardRed">
+            <div>
+              <img src="./images/bolaVermelha.svg" alt="bola cinza">
+            </div>
+            <div>
+              <span>59</span>
+              <p>VENDIDA</p>
+            </div>
+          </div>
+          <div class="cardStatus" id="cardOrange">
+            <div>
+              <img src="./images/bolaLaranja.svg" alt="bola cinza">
+            </div>
+            <div>
+              <span>139</span>
+              <p>RESERVADA</p>
+            </div>
+          </div>
+          <div class="cardStatus" id="cardGreen">
+            <div>
+              <img src="./images/bolaVerde.svg" alt="bola cinza">
+            </div>
+            <div>
+              <span>1321</span>
+              <p>DISPONÍVEL</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="lineSeparator"></div>
+      <div class="containerDisponibility">
+        <h5>FILTRAR DISPONIBILIDADE</h5>
+        <div>
+          <div>
+            <select name="" id="">
+              <option value="" disabled selected>Escolha a etapa</option>
+            </select>
+          </div>
+          <div>
+            <select name="" id="">
+              <option value="" disabled selected>Escolha a quadra</option>
+            </select>
+          </div>
+          <div>
+            <select name="" id="">
+              <option value="" disabled selected>Situação</option>
+            </select>
+          </div>
+        </div>
+        <div class="btnFilter">
+          <button>FILTRAR DISPONIBILIDADE</button>
+        </div>
+      </div>
+    </div>
+  </aside>
+  <main>
+    <div class="containerMobile">
+      <div class="navMobile">
+        <div class="menuBtn">
+          <svg id="navBtn" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#409a75}</style><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg>
+        </div>
+        <div class="title">
+          <h4> UNIDADES DE EMPREENDIMENTO </h4>
+        </div>
+      </div>
+      <div class="cardsGroup">
+        
+      </div>
+    </div>
+    <div class="containerDesktop">
+      <div class="titleDesktop">
+        <div>
+          <h5>UNIDADES DE EMPREENDIMENTO</h5>
+        </div>
+        <div class="ordenation">
+          <span >ORDENAR POR</span> 
+          <select name="" id="">
+            <option selected value="">MENOR VALOR</option>
+            <option value="">MAIOR VALOR</option>
+          </select>
+        </div>
+      </div>
+      <div class="lineSeparator"></div>
+      <div class="tableResults">
+        <table class="table">
+            <tr>
+              <th>BLOCO</th>
+              <th>QTD. QUARTOS</th>
+              <th>ANDAR</th>
+              <th>ÁREA TOTAL</th>
+              <th>COLUNA</th>
+              <th>ESTADO</th>
+            </tr>
+        </table>
+      </div>
+    </div>
+  </main>
+  <script type="module" src="./js/app.js"></script>
+  <script type="module" src="./js/mockData.js"></script>
+</body>
+</html>
