@@ -12,7 +12,7 @@ const reserved = document.querySelector("#cardOrange");
 const available = document.querySelector("#cardGreen");
 
 btnInformations.addEventListener("click", function () {
-  modal.style.display = modal.style.display === 'none' ? 'block' : 'none'
+  modal.style.display = modal.style.display === '' ? 'block' : ''
 });
 
 navBtn.addEventListener("click", function () {
@@ -113,6 +113,9 @@ dataImages.map(data => {
   cardsGroup.appendChild(card)
   tableGroup.appendChild(table)
 })
+
+console.log(modal.style.display);
+console.log('aaaaaa');
 
 const filterResultsByAvailability = (availability) => {
   const filteredResults = dataImages.filter(data => data.estado.toLowerCase() === availability);
