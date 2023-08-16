@@ -2,12 +2,18 @@ import dataImages from "./mockData.js";
 const navBtn = document.querySelector("#navBtn");
 const closeBtn = document.querySelector("#closeBtn");
 const sidebar = document.querySelector("#sidebarMobile");
+const btnInformations = document.querySelector("#btnInformations")
+const modal = document.querySelector("#modal")
 const cardsGroup = document.querySelector(".cardsGroup");
 const tableGroup = document.querySelector(".table")
 const blocks = document.querySelector("#cardGray");
 const sold = document.querySelector("#cardRed");
 const reserved = document.querySelector("#cardOrange");
 const available = document.querySelector("#cardGreen");
+
+btnInformations.addEventListener("click", function () {
+  modal.style.display = modal.style.display === 'none' ? 'block' : 'none'
+});
 
 navBtn.addEventListener("click", function () {
   sidebar.classList.add("show-sidebar");
@@ -16,10 +22,6 @@ navBtn.addEventListener("click", function () {
 closeBtn.addEventListener("click", function () {
   sidebar.classList.remove("show-sidebar");
 });
-
-blocks.addEventListener("click", function () {
-  sidebar.classList.remove("show-sidebar");
-})
 
 blocks.addEventListener("click", function () {
   sidebar.classList.remove("show-sidebar");

@@ -61,8 +61,12 @@
 
   .btnInformations {
     background-color: #409A75;
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
     padding: 0.4375rem 0.875rem;
     border-radius: 5px;
+    cursor: pointer;
 
     button {
       background: transparent;
@@ -71,8 +75,49 @@
       font-family: Verdana, Geneva, Tahoma, sans-serif;
       cursor: pointer;
     }
+
+    img {
+      width: 0.5rem;
+
+    }
   }
 }
+
+.modal {
+  display: none;
+  position: absolute;
+  right: 25px;
+  z-index: 99;
+  background-color: white;
+  border-radius: 5px;
+  margin-top: 0.3125rem;
+
+  @media (min-width: 1024px) {
+    right: auto;
+    left: 120px;
+  }
+
+  .listInformations {
+    color: #333333;
+    padding: 0.7rem;
+    font-size: 0.825rem;
+    list-style-type: none;
+    cursor: pointer;
+
+    li {
+      padding: 0.825rem;
+
+      &:hover {
+        border-radius: 5px;
+        background-color: #F5F5F5;
+      }
+    }
+
+  }
+
+}
+
+
 
 .lineSeparator {
   width: 100%;
@@ -122,7 +167,7 @@
       background-image: linear-gradient(to right, #fc9c33, #1d8f21);
       height: 0.4375rem;
       border-radius: 5px;
-      width: 73.23%;
+      width: 75.23%;
     }
   }
 }
