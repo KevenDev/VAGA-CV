@@ -48,15 +48,10 @@
 }
 
 .titleSidebar {
-  width: 90vw;
+  width: 100%;
   display: flex;
   margin-top: 0.3rem;
   justify-content: space-between;
-}
-@media (min-width: 1024px) {
-  .titleSidebar {
-    width: 100%;
-  }
 }
 .titleSidebar p {
   font-size: 0.725rem;
